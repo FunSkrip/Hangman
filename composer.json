@@ -1,11 +1,11 @@
 {
-    "name": "staticnur/hangman",
+    "name": "FunSkrip/hangman",
     "description": "Implementation of the game \"Hangman\"",
     "type": "project",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Staticnur\\Hangman\\": "src/"
+            "FunSkrip\\Hangman\\": "src/"
         },
         "files": [
             "src/Controller.php",
