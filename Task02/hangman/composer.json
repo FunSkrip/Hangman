@@ -1,0 +1,28 @@
+{
+    "name": "staticnur/hangman",
+    "description": "Implementation of the game \"Hangman\"",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Staticnur\\Hangman\\": "src/"
+        },
+        "files": [
+            "src/Controller.php",
+            "src/View.php"
+        ]
+    },
+    "bin": [
+        "bin/hangman"
+    ],
+    "authors": [
+        {
+            "name": "FunSkrip",
+            "email": "flyiq440464@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "wp-cli/php-cli-tools": "^0.12.0"
+    }
+}
