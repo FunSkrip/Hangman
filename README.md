@@ -94,4 +94,5 @@
 - [PHP Documentation](https://www.php.net/docs.php)
 - [Composer Documentation](https://getcomposer.org/doc/)
 
-
+## Ссылки на пакеты
+- [Packagist пакет Hangman](https://packagist.org/packages/funskrip/hangman#dev-main)
