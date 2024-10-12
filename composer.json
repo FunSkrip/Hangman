@@ -1,5 +1,5 @@
 {
-    "name": "FunSkrip/hangman",
+    "name": "funskrip/hangman",
     "description": "Implementation of the game \"Hangman\"",
     "type": "project",
     "license": "MIT",
