@@ -1,32 +1,29 @@
 {
-    "_readme": [
-        "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
-        "This file is @generated automatically"
-    ],
-    "content-hash": "6323b4339a3c7623cd10e6a8ed51e3cb",
     "packages": [
         {
-            "name": "funskrip/hangman",
+            "name": "staticnur/hangman",
             "version": "v1.1",
+            "version_normalized": "1.1.0.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/FunSkrip/hangman.git",
+                "url": "https://github.com/StaticNur/hangman.git",
                 "reference": "22417a499005be0d6f385542d83439d4d9a7b28a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FunSkrip/hangman/zipball/22417a499005be0d6f385542d83439d4d9a7b28a",
+                "url": "https://api.github.com/repos/StaticNur/hangman/zipball/22417a499005be0d6f385542d83439d4d9a7b28a",
                 "reference": "22417a499005be0d6f385542d83439d4d9a7b28a",
                 "shasum": ""
             },
             "require": {
                 "wp-cli/php-cli-tools": "^0.12.0"
             },
+            "time": "2024-10-12T07:39:38+00:00",
             "bin": [
                 "bin/hangman"
             ],
             "type": "project",
+            "installation-source": "dist",
             "autoload": {
                 "files": [
                     "src/Controller/GameController.php",
@@ -34,7 +31,7 @@
                     "src/Model/Game.php"
                 ],
                 "psr-4": {
-                    "FunSkrip\\Hangman\\": "src/"
+                    "Staticnur\\Hangman\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -43,20 +40,21 @@
             ],
             "authors": [
                 {
-                    "name": "FunSkrip",
-                    "email": "flyiq440464@gmail.com"
+                    "name": "StaticNur",
+                    "email": "gsjxne@gmail.com"
                 }
             ],
             "description": "Implementation of the game \"Hangman\"",
             "support": {
-                "issues": "https://github.com/FunSkrip/hangman/issues",
-                "source": "https://github.com/FunSkrip/hangman/tree/v1.1"
+                "issues": "https://github.com/StaticNur/hangman/issues",
+                "source": "https://github.com/StaticNur/hangman/tree/v1.1"
             },
-            "time": "2024-10-12T07:39:38+00:00"
+            "install-path": "../staticnur/hangman"
         },
         {
             "name": "wp-cli/php-cli-tools",
             "version": "v0.12.0",
+            "version_normalized": "0.12.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-cli/php-cli-tools.git",
@@ -75,12 +73,14 @@
                 "roave/security-advisories": "dev-latest",
                 "wp-cli/wp-cli-tests": "^4"
             },
+            "time": "2024-05-22T20:20:04+00:00",
             "type": "library",
             "extra": {
                 "branch-alias": {
                     "dev-master": "0.11.x-dev"
                 }
             },
+            "installation-source": "dist",
             "autoload": {
                 "files": [
                     "lib/cli/cli.php"
@@ -115,16 +115,9 @@
                 "issues": "https://github.com/wp-cli/php-cli-tools/issues",
                 "source": "https://github.com/wp-cli/php-cli-tools/tree/v0.12.0"
             },
-            "time": "2024-05-22T20:20:04+00:00"
+            "install-path": "../wp-cli/php-cli-tools"
         }
     ],
-    "packages-dev": [],
-    "aliases": [],
-    "minimum-stability": "stable",
-    "stability-flags": [],
-    "prefer-stable": false,
-    "prefer-lowest": false,
-    "platform": [],
-    "platform-dev": [],
-    "plugin-api-version": "2.6.0"
+    "dev": true,
+    "dev-package-names": []
 }
