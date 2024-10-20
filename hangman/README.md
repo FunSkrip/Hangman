@@ -55,7 +55,7 @@
 
 1. **Склонируйте репозиторий**:
    ```bash
-   git clone https://github.com/FunSkrip/hangman
+   git clone https://github.com/funskrip/hangman
    ```
 
 2. **Перейдите в каталог проекта**:
