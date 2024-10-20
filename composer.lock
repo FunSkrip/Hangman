@@ -4,56 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6323b4339a3c7623cd10e6a8ed51e3cb",
+    "content-hash": "d21c2787b1318423c66021204358f835",
     "packages": [
-        {
-            "name": "funskrip/hangman",
-            "version": "v1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/FunSkrip/hangman.git",
-                "reference": "22417a499005be0d6f385542d83439d4d9a7b28a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/FunSkrip/hangman/zipball/22417a499005be0d6f385542d83439d4d9a7b28a",
-                "reference": "22417a499005be0d6f385542d83439d4d9a7b28a",
-                "shasum": ""
-            },
-            "require": {
-                "wp-cli/php-cli-tools": "^0.12.0"
-            },
-            "bin": [
-                "bin/hangman"
-            ],
-            "type": "project",
-            "autoload": {
-                "files": [
-                    "src/Controller/GameController.php",
-                    "src/View/GameView.php",
-                    "src/Model/Game.php"
-                ],
-                "psr-4": {
-                    "FunSkrip\\Hangman\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "FunSkrip",
-                    "email": "flyiq440464@gmail.com"
-                }
-            ],
-            "description": "Implementation of the game \"Hangman\"",
-            "support": {
-                "issues": "https://github.com/FunSkrip/hangman/issues",
-                "source": "https://github.com/FunSkrip/hangman/tree/v1.1"
-            },
-            "time": "2024-10-12T07:39:38+00:00"
-        },
         {
             "name": "wp-cli/php-cli-tools",
             "version": "v0.12.0",
