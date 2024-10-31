@@ -2,28 +2,32 @@
 
 namespace FunSkrip\Hangman\Controller;
 
-use FunSkrip\Hangman\Model\Game;
 use FunSkrip\Hangman\View\GameView;
+use FunSkrip\Hangman\Service\GameService;
 
-class GameController {
-    private $game;
+class GameController
+{
+    private $gameService;
 
-    public function __construct() {
-        $this->game = new Game();
+    public function __construct()
+    {
+        $this->gameService = new GameService();
     }
 
-    public function startNewGame(): void {
-        $word = $this->game->getRandomWord();
-        $this->game->start($word);
-        $this->playGame();
-    }
-
-    private function playGame(): void {
-        while (!$this->game->isGameOver()) {
-            GameView::showGameState($this->game);
-            $guess = readline("Enter a letter or the whole word: ");
-            $this->game->makeGuess($guess);
+    public function run(array $args): void
+    {
+        if (count($args) === 1 || (isset($args[1]) && in_array($args[1], ['--new', '-n']))) {
+            $this->gameService->startNewGame();
+        } elseif (isset($args[1]) && in_array($args[1], ['--list', '-l'])) {
+            $this->gameService->listGames();
+        } elseif (isset($args[1]) && in_array($args[1], ['--statistics', '-s'])) {
+            $this->gameService->showStatistics();
+        } elseif (isset($args[1]) && in_array($args[1], ['--replay', '-r']) && isset($args[2])) {
+            $this->gameService->replayGame((int) $args[2]);
+        } elseif (isset($args[1]) && in_array($args[1], ['--help', '-h'])) {
+            GameView::showHelp();
+        } else {
+            echo "Invalid arguments. Use --help to see available options.\n";
         }
-        GameView::showGameResult($this->game);
     }
 }

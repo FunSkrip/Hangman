@@ -4,5 +4,7 @@ require __DIR__ . '/../vendor/autoload.php';
 
 use FunSkrip\Hangman\Controller\GameController;
 
+date_default_timezone_set('Europe/Moscow');
+
 $controller = new GameController();
-$controller->startNewGame();
+$controller->run($argv);

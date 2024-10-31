@@ -10,7 +10,9 @@
         "files": [
             "src/Controller/GameController.php",
             "src/View/GameView.php",
-            "src/Model/Game.php"
+            "src/Model/Game.php",
+            "src/Repository/Database.php",
+            "src/Service/GameService.php"
         ]
     },
     "bin": [
