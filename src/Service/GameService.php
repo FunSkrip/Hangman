@@ -35,7 +35,7 @@ class GameService
         foreach ($rows as $row) {
             if ($row['word_id'] !== null) {
                 $word = $this->db->getWordById($row['word_id']);
-                echo $row['date'] . " Player name: " . $row['player_name'] . ", Game ID: " . $row['id'] . ", Word: " . $word['word'] . ", Attempts: " . $row['attempts'] . ", Won: " . ($row['won'] ? 'Yes' : 'No') . "\n";
+                echo $row['date'] . " Player name: " . $row['player_name'] . ", Game ID: " . $row['id'] . ", Word: " . $word . ", Attempts: " . $row['attempts'] . ", Won: " . ($row['won'] ? 'Yes' : 'No') . "\n";
             }
         }
 
@@ -79,8 +79,7 @@ class GameService
         $wordId = $row['word_id'];
         $attempts = $row['attempts'];
         $won = $row['won'];
-        $wordRows = $this->db->getWordById($wordId);
-        $word = $wordRows['word'];
+        $word = $this->db->getWordById($wordId);
         if ($word === null) {
             echo "Word with ID $wordId not found.\n";
             return;

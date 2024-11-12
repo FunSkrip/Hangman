@@ -154,4 +154,4 @@
 - [Composer Documentation](https://getcomposer.org/doc/)
 
 ## Ссылки на пакеты
-- [Packagist пакет Hangman](https://packagist.org/packages/funskrip/hangman#dev-main1)
+- [Packagist пакет Hangman](https://packagist.org/packages/FunSkrip/hangman#dev-main1)
